@@ -43,5 +43,10 @@ let g:clipboard= {
 		\ }
 
 " Environment variables
-let g:python3_host_prog = '~/.virtualenvs/neovim-venv/bin/python'
+if has(win32)
+	let g:python3_host_prog = '~/.virtualenvs/neovim-venv/Scripts/python'	
+else
+	let g:python3_host_prog = '~/.virtualenvs/neovim-venv/bin/python'
+endif
+
 let g:coc_global_extensions = ['coc-python', 'coc-html', 'coc-css', 'coc-omnisharp', 'coc-emmet', 'coc-snippets', 'coc-marketplace']

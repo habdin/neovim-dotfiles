@@ -5,6 +5,7 @@ call plug#begin('~/.cache/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'editorconfig/editorconfig-vim'
 
 " Autocompletion plugin
 
