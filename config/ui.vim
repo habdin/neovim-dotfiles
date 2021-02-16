@@ -43,7 +43,7 @@ let g:clipboard= {
 		\ }
 
 " Environment variables
-if has(win32)
+if has('win32')
 	let g:python3_host_prog = '~/.virtualenvs/neovim-venv/Scripts/python'	
 else
 	let g:python3_host_prog = '~/.virtualenvs/neovim-venv/bin/python'
