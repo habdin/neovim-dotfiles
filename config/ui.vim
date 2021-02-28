@@ -28,19 +28,19 @@ colorscheme atom
 autocmd vimenter * NERDTree
 
 " Clipboard
-set clipboard=unnamedplus
-let g:clipboard= {
-		\	'name': 'Clipboard',
-		\	'copy': {
-		\		'+': 'xclip -selection clipboard',
-		\		'*': 'xclip -selection clipboard',
-		\	},
-		\	'paste':{
-		\		'+': 'xclip -selection clipboard -o',
-		\		'*': 'xclip -selection clipboard -o',
-		\	},
-		\	'cache_enabled': 1,
-		\ }
+set clipboard^=unnamed,unnamedplus
+"let g:clipboard= {
+"		\	'name': 'Clipboard',
+"		\	'copy': {
+"		\		'+': 'xclip -selection clipboard',
+"		\		'*': 'xclip -selection clipboard',
+"		\	},
+"		\	'paste':{
+"		\		'+': 'xclip -selection clipboard -o',
+"		\		'*': 'xclip -selection clipboard -o',
+"		\	},
+"		\	'cache_enabled': 1,
+"		\ }
 
 " Environment variables
 if has('win32')
@@ -49,4 +49,4 @@ else
 	let g:python3_host_prog = '~/.virtualenvs/neovim-venv/bin/python'
 endif
 
-let g:coc_global_extensions = ['coc-python', 'coc-html', 'coc-css', 'coc-omnisharp', 'coc-emmet', 'coc-snippets', 'coc-marketplace']
+let g:coc_global_extensions = ['coc-pyright', 'coc-html', 'coc-css', 'coc-omnisharp', 'coc-emmet', 'coc-snippets', 'coc-marketplace']

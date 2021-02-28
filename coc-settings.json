@@ -1,10 +1,4 @@
 {
-  "python.venvFolders": [
-    "envs",
-    ".pyenv",
-    ".direnv",
-    ".virtualenvs"
-  ],
   "phpactor.enable": true,
   "phpactor.path": "//home/habdin/Documents/Projects/phpactor/bin/phpactor"
 }
