@@ -22,7 +22,7 @@ set smartindent
 set encoding=UTF-8
 
 " Choose the colorscheme for (n)vim
-colorscheme atom
+colorscheme oceanic_material  
 
 " Start NERDTree with Neovim automatically
 autocmd vimenter * NERDTree

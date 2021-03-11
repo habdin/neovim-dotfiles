@@ -34,4 +34,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " File icons plugin
 Plug 'ryanoasis/vim-devicons'
 
+" Keyboard keymappings guide tool
+Plug 'liuchengxu/vim-which-key', {'on': ['WhichKey', 'WhichKey!']}
+autocmd! User vim-which-key call which_key#register('<Space>', 'g:which_key_map')
+
 call plug#end()
